@@ -1,0 +1,27 @@
+<header>
+  <nav>
+    <h1><a routerLink="/" class="text-white" style="text-decoration: none;">E-Learning</a></h1>    
+
+    <div class="navLinks" [ngClass]="{'show': menuOpen}">
+      <ul>
+        <li><a routerLink="/" (click)="toggleMenu()">Home</a></li>
+        <li><a routerLink="/courses" (click)="toggleMenu()">Courses</a></li>
+        <li><a routerLink="/blogs" (click)="toggleMenu()">Blogs</a></li>
+        <li><a routerLink="/contact" (click)="toggleMenu()">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <i class='bx' [ngClass]="menuOpen ? 'bx-x' : 'bx-menu'" id="menuIcon" (click)="toggleMenu()"></i>
+  </nav>
+</header>
+
+<div>
+  <router-outlet></router-outlet>
+</div> 
+
+<!-- Footer Section -->
+<footer>
+  <div class="container">
+    <p>&copy; 2025 E-Learning. All Rights Reserved.</p>
+  </div>
+</footer>

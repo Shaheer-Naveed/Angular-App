@@ -1,0 +1,46 @@
+<h1 class="my-4">Contact Us</h1>
+<div class="row justify-content-center">
+  <div class="col-md-7">
+    <section id="contact" class="contact mb-5">
+      <div class="container my-5 p-4 shadow-lg rounded bg-light">
+        <h2 class="text-primary">Ask Your Question</h2>
+        <p class="text-muted">Have questions? Need help? Contact us anytime.</p>
+        <form class="mx-3 my-3" #contactForm="ngForm" (ngSubmit)="onSubmit()">
+          <div class="mb-3">
+            <label for="Name" class="form-label">Your Name</label>
+            <input type="text" class="form-control shadow-sm" id="Name" name="Name" ngModel required>
+          </div>
+          <div class="mb-3">
+            <label for="Email" class="form-label">Your Email</label>
+            <input type="email" class="form-control shadow-sm" id="Email" name="Email" ngModel required>
+          </div>
+          <div class="mb-3">
+            <label for="Message" class="form-label">Your Message</label>
+            <textarea class="form-control shadow-sm" id="Message" name="Message" rows="4" ngModel required></textarea>
+          </div>
+          <input type="submit" value="Send Message" class="btn btn-primary btn-lg w-100">
+        </form>
+      </div>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section class="details mb-5 p-4 rounded shadow-lg bg-white">
+      <h2 class="text-primary">Contact Info</h2>
+      <div class="container">
+        <div class="detail-item d-flex align-items-center">
+          <i class="bx bxs-envelope text-primary"></i>
+          <div class="detail-text">
+            <h5>Email</h5>
+            <p><a href="mailto:shaheernaveed27@gmail.com">shaheernaveed27&#64;gmail.com</a></p>
+          </div>
+        </div>
+        <div class="detail-item d-flex align-items-center">
+          <i class="bx bxl-github text-dark"></i>
+          <div class="detail-text">
+            <h5><a href="https://github.com/Shaheer-Naveed" target="_blank">GitHub</a></h5>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

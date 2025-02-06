@@ -1,0 +1,30 @@
+<h1 class="my-4">Registration Form</h1>
+<div class="row">
+    <section id="contact" class="enroll mb-5">
+        <div class="container my-5 p-3">
+          <h2>Register YourSelf</h2>
+          <p>If you're interested in registering for our web development courses or have any questions, feel free to reach out to us!</p>
+
+          <form class="mx-3 my-3" #enrollForm="ngForm" (ngSubmit)="onSubmit()">
+            <div>
+              <label for="Name" class="form-label my-2">Your Name</label>
+              <input type="text" class="form-control" id="Name" name="Name" ngModel required>
+            </div>
+            <div>
+              <label for="Email" class="form-label my-2">Your Email</label>
+              <input type="email" class="form-control" id="Email" name="Email" ngModel required>
+            </div>
+           <div>
+            <label for="courses" class="form-label my-2">Select Your Course</label>
+            <select name="course" ngModel required="">
+                <option class="text-center" selected disabled>----Select ----</option>
+                <option >HTML & CSS</option>
+                <option >JavaScript</option>
+                <option >Angular</option>
+            </select>
+           </div>
+            <input type="submit" value="Register" class="btn btn-primary my-3 w-50">
+          </form>
+        </div>
+    </section>
+</div>

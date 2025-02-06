@@ -1,0 +1,150 @@
+/* Main container for courses page */
+.courses {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+  }
+  
+  /* Container for individual course content */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Heading for courses section */
+  .courses h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 50px;
+  }
+  
+  /* Styling for each course */
+  .course {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+  }
+  
+  .course-details {
+    max-width: 80%;
+    text-align: left;
+  }
+  
+  .course h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .course p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .course ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .course ul li {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .course .btn {
+    background-color: #3f3fe7;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .course .btn:hover {
+    background-color: #2c2cc1;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .testimonial h4 {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact input,
+  .contact textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .contact button {
+    padding: 10px 20px;
+    background-color: #3f3fe7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact button:hover {
+    background-color: #2c2cc1;
+  }
+  

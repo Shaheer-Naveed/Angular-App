@@ -1,0 +1,137 @@
+/* Navbar Styles */
+nav {
+    background-color: #3f3fe7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+nav:hover {
+    background-color: #2f2fbf;
+}
+
+nav h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+}
+
+nav h1:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation Links */
+.navLinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.navLinks ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks ul li {
+    position: relative;
+}
+
+.navLinks ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navLinks ul li a:hover {
+    color: #fff;
+}
+
+.navLinks ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.navLinks ul li a:hover::after {
+    width: 100%;
+}
+
+/* Menu Icons */
+.bx {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+#menuIcon {
+    display: none;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .navLinks {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 40%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        transition: right 0.3s ease-in-out;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000; /* Ensure it's above all content */
+    }
+
+    .navLinks.show {
+        right: 0;
+    }
+
+    .navLinks ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #menuIcon {
+        display: block;
+        z-index: 1100;
+    }
+
+    /* Prevent scrolling when menu is open */
+    body.menu-open {
+        overflow: hidden;
+    }
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
