@@ -21,7 +21,7 @@
   .banner {
     height: 70vh;
     width: 100%;
-       background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-computer-training-class-enrollment-hand-painted-flat-blue-banner-image_177222.jpg');
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-computer-training-class-enrollment-hand-painted-flat-blue-banner-image_177222.jpg');
     background-position: relative;
     display: flex;
     justify-content: center;
@@ -221,6 +221,15 @@
   
   /* Responsive Design */
   @media (max-width: 768px) {
+    .text-box h1{
+      font-size: 35px;
+    }
+    .text-box p{
+      font-size: 16px;
+    }
+    .hero-btn {
+      padding:8px  17px;
+    }
     .course-list {
       flex-direction: column;
       align-items: center;
@@ -235,13 +244,24 @@
       width: 80%;
     }
     .test-col{
+
       margin: auto;
     }
     .test-col p{
-      font-size: 12px;
+      font-size: 10px;
     }
     .test-col h3{
-      font-size: 16px;
+      font-size: 14px;
     }
   }
-  
+  @media (max-width: 572px){
+    .text-box h1{
+      font-size: 30px;
+    }
+    .text-box p{
+      font-size: 14px;
+    }
+    .hero-btn {
+      padding:8px  15px;
+    }
+  }
